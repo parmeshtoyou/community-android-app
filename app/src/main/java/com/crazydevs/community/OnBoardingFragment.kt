@@ -19,6 +19,4 @@ class OnBoardingFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_on_boarding, container, false)
     }
-
-
 }
