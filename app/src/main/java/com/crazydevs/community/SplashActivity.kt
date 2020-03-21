@@ -13,7 +13,10 @@ class SplashActivity : AppCompatActivity() {
         Handler().postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             finish()
-        }, 2000)
+        }, SPLASH_DELAY)
     }
 
+    companion object {
+        private const val SPLASH_DELAY = 2000L
+    }
 }
