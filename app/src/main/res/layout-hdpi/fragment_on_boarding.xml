@@ -9,10 +9,10 @@
     tools:context=".OnBoardingFragment">
 
     <ImageView
+        android:id="@+id/loginAppLogo"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginTop="50dp"
-        android:id="@+id/loginAppLogo"
         android:src="@drawable/ic_group_work_black_48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,25 +43,37 @@
                 android:text="@string/login"
                 android:textSize="32sp" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/emailIdEditText"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailIdEditLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginEnd="12dp"
-                android:hint="@string/username"
-                android:inputType="textEmailAddress" />
+                android:layout_marginTop="20dp">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/pwdEditText"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailIdEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:hint="@string/username"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordEditLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="12dp"
-                android:hint="@string/password"
-                android:inputType="textPassword" />
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pwdEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 android:id="@+id/forgetPassword"
