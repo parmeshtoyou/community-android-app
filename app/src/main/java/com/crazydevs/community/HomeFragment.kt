@@ -1,6 +1,5 @@
 package com.crazydevs.community
 
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -19,10 +18,7 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        val context : Context
         Toast.makeText(requireContext(), "onCreateView", Toast.LENGTH_SHORT).show()
         return FragmentHomeBinding.inflate(inflater).root
-
     }
 }
