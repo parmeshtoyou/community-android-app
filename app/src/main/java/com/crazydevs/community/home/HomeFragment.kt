@@ -1,4 +1,4 @@
-package com.crazydevs.community
+package com.crazydevs.community.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -18,7 +18,6 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        Toast.makeText(requireContext(), "onCreateView", Toast.LENGTH_SHORT).show()
         return FragmentHomeBinding.inflate(inflater).root
     }
 }

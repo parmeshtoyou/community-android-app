@@ -2,7 +2,7 @@
 
 buildscript {
     ext {
-        kotlin_version = '1.4.21'
+        kotlin_version = '1.4.30'
         ktlintVersion = '0.31.0'
         nav_version = "2.3.2"
         app_compat_version = '1.2.0'
@@ -23,7 +23,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.1.2'
-        classpath 'com.google.gms:google-services:4.3.4'
+        classpath 'com.google.gms:google-services:4.3.5'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
